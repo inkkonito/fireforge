@@ -1,2 +1,15 @@
-echo "node_modules/" >> .gitignore
-echo ".env" >> .gitignore
+# Ignorer les fichiers générés dans backend
+backend/.tmp/
+backend/node_modules/
+backend/build/
+backend/tsconfig.json
+backend/src/extensions/
+backend/types/generated/
+
+# Ignorer les fichiers dans frontend
+frontend/node_modules/
+frontend/dist/
+
+# Génériques pour le projet
+*.env
+.DS_Store
